@@ -1,0 +1,62 @@
+body{
+  background-color: #FFFFFF;
+  color: #000000;
+  text-align: center;
+  font-size: 64px;
+  font-family: 'Kodchasan', sans-serif;
+}
+.bodydark{
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 64px;
+  font-family: 'Kodchasan', sans-serif;
+}
+/*
+.clockmen{
+  text-align: left;
+}
+.darkmode{
+  background-color:
+}
+.blankmode{
+
+}
+*/
+.invis{
+  visibility:hidden;
+}
+.grau{
+  visibility: visible;
+}
+.clockdiv{
+  display: inline-block;
+	font-weight: 100;
+	text-align: center;
+  float: inherit;
+}
+.clockdiv div{
+	display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px
+}
+.inlineright{
+  display: inline-block;
+  float: right;
+  margin-right: 10px;
+}
+.inlinemiddle{
+  display: inline-block;
+  float: right;
+}
+.inlineleft{
+  display: inline-block;
+  float: left;
+}
+.darkmode{
+  color: #FFFFFF;
+}
+.whitemode{
+  color: #000000;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Kodchasan:600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Timer vom Z-Info Kurs</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="timer.js">
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+  <header>
+  <div>
+    <input class="inlineleft" type="image" name="bttn_time" src="img/bttn_time.svg" alt="100" width="100" onclick="chooseTime()">
+    <input class="inlinemiddle" type="image" name="bttn_sun" src="img/bttn_sun.svg" alt="100" width="100" onclick="whitemode()">
+    <input class="inlineright" type="image" name="bttn_moon" src="img/bttn_moon.svg" alt="100" width="100"  onclick="darkmode()">
+  </div>
+  </header>
+  <div class="clockdiv">
+    <div>
+      <input type="image" src="img/bttn_up.svg" alt="100" width="100" class="invis">
+      <br>
+      <input type="image" src="img/bttn_go.svg" class="invis" alt="100" width="100">
+      <br>
+      <input type="image" src="img/bttn_up.svg" alt="100" width="100" class="invis">
+    </div>
+    <div>
+      <input type="image" src="img/bttn_up.svg" alt="100" width="100" class="invis">
+      <br>
+      <input type="image" src="img/bttn_stop.svg" class="invis" alt="100" width="100">
+      <br>
+      <input type="image" src="img/bttn_up.svg" alt="100" width="100" class="invis">
+    </div>
+    <div>
+      <input type="image" src="img/bttn_up.svg" id="bttnup1" onmousedown="mousedownHours()" onmouseup="mouseup()" alt="100" width="100">
+      <br>
+      <number id="testNumberHours">0</number>
+      <br>
+      <input type="image" src="img/bttn_down.svg" id="bttndown1" onmousedown="mousedownHoursMinus()" onmouseup="mouseup()" alt="100" width="100">
+    </div>
+    <div>
+      <input type="image" src="img/bttn_up.svg" id="bttnup2" onmousedown="mousedownMinutes()" onmouseup="mouseup()" alt="100" width="100">
+      <br>
+      <number id="testNumberMinutes">0</number>
+      <br>
+      <input type="image" src="img/bttn_down.svg" id="bttndown2" onmousedown="mousedownMinutesMinus()" onmouseup="mouseup()" alt="100" width="100">
+    </div>
+    <div>
+      <input type="image" src="img/bttn_up.svg" id="bttnup3" onmousedown="mousedownSeconds()" onmouseup="mouseup()" alt="100" width="100">
+      <br>
+      <number id="testNumberSeconds">0</number>
+      <br>
+      <input type="image" src="img/bttn_down.svg" id="bttndown3" onmousedown="mousedownSecondsMinus()" onmouseup="mouseup()" alt="100" width="100">
+    </div>
+    <div>
+      <input type="image" src="img/bttn_up.svg" alt="100" width="100" class="invis">
+      <br>
+      <input type="image" src="img/bttn_go.svg" id="StartButton" onclick="start()" class="grau" alt="100" width="100">
+      <br>
+      <input type="image" src="img/bttn_up.svg" alt="100" width="100" class="invis">
+    </div>
+    <div>
+      <input type="image" src="img/bttn_up.svg" alt="100" width="100" class="invis">
+      <br>
+      <input type="image" src="img/bttn_stop.svg" id="StopButton" onclick="stop()" class="invis" alt="100" width="100">
+      <br>
+      <input type="image" src="img/bttn_up.svg" alt="100" width="100" class="invis">
+    </div>
+  </div>
+  </body>
+</html>
+</DOCTYPE>
